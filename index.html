@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>BumpAPI Documentation</h1>
+        <input type="text" id="searchInput" placeholder="Search...">
+    </header>
+
+    <div class="container">
+        <h2>Introduction</h2>
+        <p>
+            BumpAPI is a powerful Python library designed to interact with external APIs of websites. It facilitates easy extraction of data, navigation, and interaction with web elements. This library streamlines the process of web scraping, enabling users to retrieve and manipulate specific content from websites effortlessly.
+        </p>
+        <h2>Usage</h2>
+        <p>To start using the BumpAPI library, follow these steps:</p>
+        <ol>
+            <li>Ensure you have Python installed on your system. You can download it from <a href="https://www.python.org/downloads/" target="_blank" rel="noopener noreferrer">here</a>.</li>
+            <li>Install BumpAPI using pip by running the following command in your terminal or command prompt:<br><code>pip install bumpAPI</code></li>
+            <li>Once installed, import the library in your Python code:<br><code>from bumpAPI import BumpAPI</code></li>
+            <li>Create an instance of the library by initializing <code>bump = BumpAPI()</code></li>
+            <li>Set the target URL using the <code>bump.target()</code> method to specify the website you want to interact with.</li>
+            <li>Execute the target with the <code>bump.executor()</code> method to fetch the webpage content.</li>
+            <li>Start using the various methods available in the BumpAPI library through the <code>bump</code> object to interact with the webpage, extract data, and perform actions.</li>
+        </ol>
+        <p>Refer to the library documentation for detailed information on available methods and their usage.</p>
+        <h2>Get started</h2>
+        <p>To begin using the BumpAPI library, follow these basic commands:</p>
+        <ol>
+            <li><strong>Set Target URL:</strong> Use <code>bump.target('URL')</code> to set the target website to interact with.</li>
+            <li><strong>Execute Target:</strong> Run <code>bump.executor()</code> to fetch the webpage content.</li>
+            <li><strong>View Page Text:</strong> Retrieve the entire page text using <code>bump.text()</code>.</li>
+            <li><strong>Find Text:</strong> Search for a specific text using <code>bump.find('text_to_find')</code>.</li>
+            <li><strong>Cut Text:</strong> Extract a portion of text between two keywords using <code>bump.cut('start_keyword', 'end_keyword')</code>.</li>
+            <li><strong>Click Element:</strong> Simulate a click action on an element using <code>bump.click('element_id')</code>.</li>
+            <li><strong>Send Text:</strong> Input text into the webpage using <code>bump.send('your_text')</code>.</li>
+        </ol>
+
+        <p>For example:</p>
+        <code>bump.target('https://example.com')</code><br>
+        <code>bump.executor()</code><br>
+        <code>bump.text()</code><br>
+        <code>bump.find('search_text')</code><br>
+        <code>bump.cut('start_keyword', 'end_keyword')</code><br>
+        <code>bump.click('element_id')</code><br>
+        <code>bump.send('your_text')</code><br>
+
+        <p>Refer to the library documentation for advanced commands and usage instructions.</p>
+        <h2>Library Commands</h2>
+
+<h3>bump.target('URL')</h3>
+<p><strong>Description:</strong> Sets the target URL for interacting with the website.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.target('https://example.com')</code>
+
+<h3>bump.executor()</h3>
+<p><strong>Description:</strong> Fetches the webpage content from the specified URL.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.executor()</code>
+
+<h3>bump.text()</h3>
+<p><strong>Description:</strong> Retrieves and displays the entire text content of the webpage.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.text()</code>
+
+<h3>bump.find('search_text')</h3>
+<p><strong>Description:</strong> Searches for the specified text within the webpage.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.find('example text')</code>
+
+<h3>bump.cut('start_keyword', 'end_keyword')</h3>
+<p><strong>Description:</strong> Extracts text between two specified keywords.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.cut('start', 'end')</code>
+
+<h3>bump.click('element_id')</h3>
+<p><strong>Description:</strong> Simulates a click action on a specific HTML element by its ID.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.click('submit_button')</code>
+
+<h3>bump.send('your_text')</h3>
+<p><strong>Description:</strong> Inputs text into the webpage, simulating user input.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.send('Your message here')</code>
+
+<h3>bump.wait(seconds)</h3>
+<p><strong>Description:</strong> Pauses execution for the specified number of seconds.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.wait(5)</code>
+
+<h3>bump.refresh('type')</h3>
+<p><strong>Description:</strong> Refreshes the webpage content. 'type' specifies a full refresh.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.refresh('type')</code>
+
+<h3>bump.links()</h3>
+<p><strong>Description:</strong> Retrieves and displays all the hyperlinks on the webpage.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.links()</code>
+
+<h3>bump.images(download=True)</h3>
+<p><strong>Description:</strong> Retrieves all image URLs on the webpage. 'download=True' downloads the images.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.images(download=True)</code>
+
+<h3>bump.summary()</h3>
+<p><strong>Description:</strong> Displays a summarized version of the page content.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.summary()</code>
+
+<h3>bump.stats()</h3>
+<p><strong>Description:</strong> Provides statistics of HTML tag occurrences on the webpage.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.stats()</code>
+
+<h3>bump.headers()</h3>
+<p><strong>Description:</strong> Displays the headers of the target URL.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.headers()</code>
+
+<h3>bump.compare('target_url')</h3>
+<p><strong>Description:</strong> Compares the content of two URLs.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.compare('https://example.com')</code>
+
+<h3>bump.extract('title')</h3>
+<p><strong>Description:</strong> Extracts HTML elements based on their title.</p>
+<p><strong>Usage:</strong></p>
+<code>bump.extract('Page Title')</code>
+<h2>Library Usage Examples</h2>
+
+<h3>Example 1: Extract Text</h3>
+<p><strong>Description:</strong> Extracts text between specified keywords.</p>
+<p><strong>Code:</strong></p>
+<code>bump.target('https://example.com')</code><br>
+<code>bump.executor()</code><br>
+<code>bump.cut('start', 'end')</code>
+
+<h3>Example 2: Click on Button</h3>
+<p><strong>Description:</strong> Simulates a click on a button with a specific ID.</p>
+<p><strong>Code:</strong></p>
+<code>bump.target('https://example.com')</code><br>
+<code>bump.executor()</code><br>
+<code>bump.click('submit_button')</code>
+
+<h3>Example 3: Retrieve Links</h3>
+<p><strong>Description:</strong> Fetches and displays all hyperlinks on a webpage.</p>
+<p><strong>Code:</strong></p>
+<code>bump.target('https://example.com')</code><br>
+<code>bump.executor()</code><br>
+<code>bump.links()</code>
+
+<h3>Example 4: Search Text</h3>
+<p><strong>Description:</strong> Searches for specific text on a webpage.</p>
+<p><strong>Code:</strong></p>
+<code>bump.target('https://example.com')</code><br>
+<code>bump.executor()</code><br>
+<code>bump.find('search_text')</code>
+
+<h3>Example 5: Send Text</h3>
+<p><strong>Description:</strong> Inputs text into a webpage.</p>
+<p><strong>Code:</strong></p>
+<code>bump.target('https://example.com')</code><br>
+<code>bump.executor()</code><br>
+<code>bump.send('Your message here')</code>
+</html>
+
+    </div>
+</body>
+
+</html>
