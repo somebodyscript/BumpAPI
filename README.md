@@ -38,4 +38,5 @@ Support:
 For any inquiries, suggestions, or issues, please reach out to BumpAPI Labs via ecomatedev@gmail.com
 
 PyPI: https://pypi.org/project/bumpAPI/
+Documentation: https://ecomatedev.github.io/BumpAPI/
 Thank you for considering BumpAPI for your web interaction needs!
